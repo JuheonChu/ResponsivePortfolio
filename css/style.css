@@ -123,3 +123,130 @@ body.dark-theme{
 .change-theme:hover{
     color:var(--first-color);
 }
+
+/* ============================== BASE ====================================*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color); 
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================================== REUSABLE CSS CLASSES =============================== */
+.section{
+    padding: 2rem 0 4rem;
+    margin:auto;
+    min-height: 80vh; /*80 vertical height*/
+}
+
+.section__title{
+    font-size: var(--big-font-size);
+    font-family: var(--gullible-font);
+
+}
+
+.section__subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section__title,
+.section__subtitle{
+    text-align: center;
+}
+
+/* ============================= LAYOUT ============================== */
+.container{
+    margin-right: var(--mb-1);
+}
+
+.grid{
+    display:grid;
+}
+
+.header{
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+
+
+/* ================= NAV STYLING =================*/
+.nav{
+    /* max-width: 968px; (or the number I prefer)*/
+    height:var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:0;
+}
+
+.nav__logo, 
+.nav__toggle{
+    color:var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo:hover{
+    color:var(--first-color);
+}
+
+.nav__toggle{
+    font-size: var(--h3-font-size);
+    cursor: pointer;
+    margin-right:2rem;
+}
+
+.nav__toggle:hover{
+    color: var(--first-color);
+}
+
+.navbar-brand{
+    font-family: var(--robotomono-font);
+}
+
+@media screen and (max-width: 768px){
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;
+        right: 0;
+        left: 0;
+        width:100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+    }
+}

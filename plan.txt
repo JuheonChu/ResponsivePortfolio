@@ -7,3 +7,8 @@ Main
     PORTFOLIO
     CONTACT US
 footer 
+
+
+SKILLS 
+
+card ---> programming language & software SKILLS

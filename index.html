@@ -8,150 +8,918 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=Poppins:wght@200;300;400;800&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-
-    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=Poppins:wght@200;300;400;600;800&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- ICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    
-    <!-- Argon CSS-->
+
+    <!-- Argon CSS -->
     <link type="text/css" href="css/argon-design-system.min.css" rel="stylesheet">
 
-    <!-- Personal Styling -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Typewriter CSS Effect -->
+    <script src = "https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Self Script -->
+    <link rel="stylesheet" href="css/style.css">
+    
     <title>John Chu</title>
   </head>
   <body>
-    <!-- -------------------------------HEADER---------------------------------- -->
-    <header class = "header" id = "header">
-      <nav class="nav container navbar-expand-lg">
-        <a href="#" class="nav__logo navbar-brand ml-3">John Chu</a>
-        <button class="navbar-toggler" type = "button" data-toggle="collapse" data-target = "#navbar-default" arial-controls="navbar-default" aria-expanded="false" arial-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- ------------- HEADER -------------------->
+    <header class="header" id="header">
+        <nav class="nav container navbar-expand-lg">
+            <a href="#" class="nav__logo navbar-brand ml-3">John Chu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class = "nav__list grid">
-            <li class = "nav__item">
-              <a href = "#home" class = "nav__link">
-                <i class = "uil uil-estate nav__icon"></i>Home
-              </a>
-            </li>
-            
-            <li class = "nav__item">
-              <a href = "#about" class = "nav__link">
-                <i class = "uil uil-user nav__icon"></i>About
-              </a>
-            </li>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
 
-            <li class = "nav__item">
-              <a href="#skills" class = "nav__link">
-                <i class = "uil uil-file nav__icon"></i>Skills
-              </a>
-            </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
 
-            <li class = "nav__item">
-              <a href = "#qualifications" class = "nav__link">
-                <i class = "uil uil-diary nav__icon"></i>Qualification
-              </a>
-            </li>
-            
-            <li class = "nav__item">
-              <a href = "#portfolio" class = "nav__link">
-                <i class = "uil uil-scenery nav__icon"></i>Portfolio
-              </a>
-            </li>
-            
-            <li class = "nav__item">
-              <a href = "#contact" class = "nav__link">
-                <i class = "uil uil-message nav__icon"></i>Contact Us
-              </a>
-            </li>
-          </ul>
-          <!--Close button-->
-          <i class = "uil uil-times nav__close" id = "nav-close"></i>
-        </div>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-file nav__icon"></i>Skills
+                        </a>
+                    </li>
 
-        <div class = "nav__btns">
-          <!-- THEME CHANGING BUTTONS -->
-          <i data-mode = "dark" class ="uil uil-moon moon-change-theme" id = "theme-button"></i>
-          
-          <div class = "nav__toggle" id = "nav__toggle">
-            <i class = "uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
+                    <li class="nav__item">
+                        <a href="#qualifications" class="nav__link">
+                            <i class="uil uil-diary nav__icon"></i>Qualification
+                        </a>
+                    </li>
 
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- THEME CHANGING BUTTONS -->
+                <i data-mode= "dark" class="uil uil-moon moon-change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
     </header>
-    <!-- =================================MAIN========================================== -->
-    <main class ="main">
 
-    
-    <!-- --------------------------------HOME----------------------------------------->
-      <section class="home section" id = "home">
+<!-- ============== MAIN =============== -->
+    <main class="main">
 
-      </section>
-    
-    <!-- -------------------------------ABOUT ME------------------------------------- -->
-    <section class="about section" id = "about">
+    <!-- ------------- HOME -------------------->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
 
-    </section>
-    
-    
-      
-    
-    <!-- -------------------------------Skills------------------------------------- -->
-    <section class="skills section" id="skills">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/john-chu-72788b157/" target="_blank" class="home__social-icon" id="myLinkedIn">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
 
-    </section>
+                        <a href="https://www.instagram.com/jc981073/" target="_blank" class="home__social-icon" id="myInstagram">
+                            <i class="uil uil-instagram"></i>
+                        </a>
 
-     <!-- -------------------------------QUALIFICATIONS (Education and Experience)------------------------------------- -->
-     <section class="qualification section" id="qualification">
+                        <a href="https://github.com/JuheonChu" target="_blank" class="home__social-icon" id="myGithub">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
 
-     </section>
-    
-    <!-- -------------------------------PORTFOLIO------------------------------------- -->
-    <section class="portfolio section" id="portfolio">
+                    </div>
+                </div>
 
-    </section>
-    
-    
-    <!-- -------------------------------CONTACT US------------------------------------- -->
-    <section class="contact section" id="contact">
+                <div class="home__data">
+                    <small class="home__welcome s-color"> Welcome to my Portfolio Website! </small>
+                    <h1 class="home__title"> Hello I'm </h1>
+                    <div id="typewriter"></div>
+                    <h3 class="home__subtitle" id="home-bio">Aspring software engineer interested in technology, web development, and CI/CD integration. Passionate about learning IoT and Machine Learning. Team player respecting fellow seniors, juniors, and colleagues with dignity and respect. </h3>
+                    <a href="#contact" class="button button--flex">
+                        Contact Me <i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
 
-    </section>
+            </div>
 
+            <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                    
+                </a>
+            </div>
+        </section>
+
+    <!-- ------------- ABOUT ME -------------------->
+        <section class="about section" id="about">
+            <h2 class="section__title">About</h2>
+            <span class="section__subtitle"> My Introduction </span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/self-profile/John Chu.jpg" alt="my achievement photo" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description" id="home-about"> 
+                        Dickinson College senior, pursuing Bachelor of Science in Computer Science and Mathematics. 7 months of work experience in software engineering industry. Capable of developing and testing software components and applications, as well as diagnosing, debugging, and resolving errors in diligent, timely, and proactive manner. Ability to design and build innovative technologies in large distributed computing environment. Instrumental in identifying and resolving software defects by reviewing code errors and log files as well as using debug functions and other troubleshooting techniques.
+                    </p>
+                </div>
+
+                <div class="about__info">
+                    <div>
+                        <span class="about__info-title"> < 01 </span>
+                        <span class="about__info-name"> Years <br> Experience </span>
+                    </div>
+
+                    <div>
+                        <span class="about__info-title"> 10+ </span>
+                        <span class="about__info-name"> Completed <br> Projects </span>
+                    </div>
+
+                    <div>
+                        <span class="about__info-title"> 02 </span>
+                        <span class="about__info-name"> Companies <br> Worked </span>
+                    </div>
+                </div>
+
+                <div class="about__buttons">
+                    <a href="assets/files/John Chu Resume.pdf" download="my_CV" target="_blank" class="button button--flex">
+                        Download Resume <i class="uil uil-download-alt button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <!-- ------------- Skills-------------------->
+        <section class="skills section" id="skills">
+            <h1 class="section__title"> Skillset </h1>
+            <span class="section__subtitle"> My skillsets </span>
+
+            <div class="skills__container container grid">
+
+              <!-- Programming language -->
+              <h3 class = "section__title"> Programming Language </h3>
+              <div class="row" id="skillset_container">
+                
+                <!-- Java -->
+                <div class="skills__container-card">
+                    <div class="card_skill shadow2">
+                        <div class="imgBx">
+                            <img src="assets/img/java-seeklogo.com.svg" alt="Java logo" style = "max-width:85%;">
+                        </div>
+                        <div class="contentBx">
+                            <h2> Java </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="skills__container-card">
+                  <div class="card_skill shadow2">
+                      <div class="imgBx">
+                          <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/python-seeklogo.com_sbuevg.svg" alt="Python logo">
+                      </div>
+                      <div class="contentBx">
+                          <h2> Python </h2>
+                      </div>
+                  </div>
+                </div>
+
+                <!-- C language -->
+                <div class="skills__container-card">
+                  <div class="card_skill shadow2">
+                      <div class="imgBx">
+                          <img src="assets/img/c-programming-language-seeklogo.com.svg" alt="C logo">
+                      </div>
+                      <div class="contentBx">
+                          <h2> C </h2>
+                      </div>
+                  </div>
+                </div>
+
+                <!-- C++ language -->
+                <div class="skills__container-card">
+                  <div class="card_skill shadow2">
+                      <div class="imgBx">
+                          <img src="assets/img/c-seeklogo.com.svg" alt="C++ logo">
+                      </div>
+                      <div class="contentBx">
+                          <h2> C++ </h2>
+                      </div>
+                  </div>
+                </div>
+
+
+
+                <!-- Software & Framework -->
+                <h3 class = "section__title"> Software and Framework </h3>
+                <div class="row" id="skillset_container">
+                    <!-- HTML -->
+                    <div class="skills__container-card">
+                        <div class="card_skill shadow2">
+                            <div class="imgBx">
+                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/HTML_5-595b40b65ba036ed117d4260_fnyo1z.svg" alt="HTML logo">
+                            </div>
+                            <div class="contentBx">
+                                <h2> HTML </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="skills__container-card">
+                        <div class="card_skill shadow2">
+                            <div class="imgBx">
+                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/Css3-595b40b65ba036ed117d3eb8_jiqifm.svg" alt="HTML logo">
+                            </div>
+                            <div class="contentBx">
+                                <h2> CSS </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skills__container-card">
+                        <div class="card_skill shadow2" style = "width:178px;">
+                            <div class="imgBx">
+                                <img src="assets/img/javascript-js-seeklogo.com.svg" alt="JavaScript logo" >
+                            </div>
+                            <div class="contentBx">
+                                <h2> Javascript </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- React -->
+                    <div class="skills__container-card">
+                      <div class="card_skill shadow2">
+                          <div class="imgBx">
+                              <img src="assets/img/react-seeklogo.com.svg" alt="React logo" >
+                          </div>
+                          <div class="contentBx">
+                              <h2> React.js </h2>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- Node.js -->
+                    <div class="skills__container-card">
+                      <div class="card_skill shadow2">
+                          <div class="imgBx">
+                              <img src="assets/img/nodejs-seeklogo.com.svg" alt="Node.js logo">
+                          </div>
+                          <div class="contentBx">
+                              <h2> Node.js </h2>
+                          </div>
+                      </div>
+                  </div>
+
+
+                    <!-- MySQL -->
+                    <div class="skills__container-card">
+                      <div class="card_skill shadow2">
+                          <div class="imgBx">
+                              <img src="assets/img/mysql-seeklogo.com.svg" alt="MySQL logo">
+                          </div>
+                          <div class="contentBx">
+                              <h2> MySQL </h2>
+                          </div>
+                      </div>
+                  </div>
+
+
+                    <!-- Bootstrap -->
+                    <div class="skills__container-card">
+                        <div class="card_skill shadow2" style = "width:162px;">
+                            <div class="imgBx">
+                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/bootstrap-5-seeklogo.com_rz32ih.svg" alt="Bootstrap logo">
+                            </div>
+                            <div class="contentBx">
+                                <h2> Bootstrap </h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+                   
+                    <!-- Spring -->
+                    <div class="skills__container-card">
+                      <div class="card_skill shadow2">
+                          <div class="imgBx">
+                              <img src="assets/img/spring-seeklogo.com.svg" alt="Spring logo">
+                          </div>
+                          <div class="contentBx">
+                              <h2> Spring </h2>
+                          </div>
+                      </div>
+                  </div>
+
+
+                    <!-- Git -->
+                    <div class="skills__container-card">
+                        <div class="card_skill shadow2">
+                            <div class="imgBx">
+                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831743/skillset%20logos/git-seeklogo.com_eqv1dl.svg" alt="Git logo">
+                            </div>
+                            <div class="contentBx">
+                                <h2> Git </h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+
+                    <!-- Linux -->
+                    <div class="skills__container-card">
+                        <div class="card_skill shadow2">
+                            <div class="imgBx">
+                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/tux-seeklogo.com_aiyr1d.svg" alt="Linux logo">
+                            </div>
+                            <div class="contentBx">
+                                <h2> Linux </h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- AWS -->
+                    <div class="skills__container-card">
+                      <div class="card_skill shadow2">
+                          <div class="imgBx">
+                              <img src="assets/img/aws-seeklogo.com.svg" alt="AWS logo">
+                          </div>
+                          <div class="contentBx">
+                              <h2> AWS </h2>
+                          </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Kubernetes -->
+                    <div class="skills__container-card">
+                      <div class="card_skill shadow2" style = "width: 195px; padding:2.5em;">
+                          <div class="imgBx">
+                              <img src="assets/img/kubernetes-seeklogo.com.svg" alt="Kubernetes logo">
+                          </div>
+                          <div class="contentBx">
+                              <h2> Kubernetes </h2>
+                          </div>
+                      </div>
+                    </div>
+
+
+                    <!-- Docker -->
+                    <div class="skills__container-card">
+                      <div class="card_skill shadow2">
+                          <div class="imgBx">
+                              <img src="assets/img/docker-seeklogo.com.svg" alt="Docker logo">
+                          </div>
+                          <div class="contentBx">
+                              <h2> Docker </h2>
+                          </div>
+                      </div>
+                    </div>
+
+                     <!-- Docker -->
+                     <div class="skills__container-card">
+                      <div class="card_skill shadow2">
+                          <div class="imgBx">
+                              <img src="assets/img/jenkins-seeklogo.com.svg" alt="Jenkins logo">
+                          </div>
+                          <div class="contentBx">
+                              <h2> Jenkins </h2>
+                          </div>
+                      </div>
+                    </div>
+
+                   
+
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End of the skill section -->
+        
+
+
+
+
+
+
+    <!-- ------------- QUALIFICATIONS (Education and Experience) -------------------->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title"> Qualification </h2>
+            <span class="section__subtitle"> A journey of my career </span>
+
+            <div class="qualification__container container">
+
+                <div class="row mt-lg-0" style = "display: flex; flex-wrap:nowrap;">
+                    <!-- Education -->
+                    <div class="col-lg-6 col-sm-10 col-md-10 mt-2 qualification__content" id="education">
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-graduation-cap qualification__icon"></i> Education
+                        </div>
+
+                        <div id="education_timeline">
+                            <div class="container py-2">
+
+                                <!-- Timeline item 1 -->
+                                <div class="row">
+                                    <!-- Timeline design -->
+                                    <div class="col-auto text-center flex-column d-sm-flex">
+                                        <div class="row h-50 qualification__journey">
+                                            <div class="col">
+                                                <span class="qualification__line"></span>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+
+                                        <h5>
+                                            <span class="badge qualification__calendar">
+                                                <i class="uil uil-calendar-alt qualification__calendar-icon"></i>
+                                                2023
+                                            </span>
+                                        </h5>
+
+                                        <div class="row h-50 qualification__journey">
+                                            <div class="col">
+                                                <span class="qualification__line"></span>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                    </div> <!-- ENd of the timeline design-->
+                                    
+                                    
+                                    <!-- Timeline content Events -->
+                                    <div class="col py-2">
+                                        <div class="card education-card transparent_card mirror-face shadow2">
+                                              <div class="card-body">
+                                                    <div class="task">
+                                                        <div class="abstract">
+                                                            <h3 class="qualification__title"> Dickinson College </h3>
+                                                            <p class="qualification__subtitle"> Bachelor of Science in CS & Math</p>
+                                                        </div>
+                                                        <div class="details">
+                                                            <p class="qualification__subtitle"> • Computer Science & Mathematics Double major </p>
+                                                            <p class="qualification__subtitle"> • Expected December 2023 </p>
+                                                        </div>
+                                                    </div>
+                                              </div>
+                                        </div>
+                                    </div> <!-- End of the col py-2-->
+                                </div><!--end of the row div tag-->
+                         
+                            </div> <!-- End of the container py-2 -->
+                        </div> <!-- End of the education timeline -->
+                    </div> <!-- End of the education -->
+                    
+                    
+                    <!-- Experience -->
+                    <div class="col-lg-6 col-sm-10 col-md-10 mt-2 qualification__content" id="experience">
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i> Experience
+                        </div>
+
+                        <div id="expreience_timeline">
+                            <div class="container py-2">
+                                <!-- Timeline item 1 -->
+                                <div class="row" style = "flex-wrap: nowrap;">
+                                    <!-- Timeline design -->
+                                    <div class="col-auto text-center flex-column d-sm-flex">
+                                        <div class="row h-50 qualification__journey">
+                                            <div class="col">
+                                                <span class="qualification__line"></span>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+
+                                        <h5>
+                                            <span class="badge qualification__calendar">
+                                                <i class="uil uil-calendar-alt qualification__calendar-icon"></i>
+                                                2022
+                                            </span>
+                                        </h5>
+
+                                        <div class="row h-50 qualification__journey">
+                                            <div class="col">
+                                                <span class="qualification__line"></span>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                        </div>
+                                    </div> <!-- End of the Timeline Design -->
+                                    
+                                    
+                                    <!-- Timeline content Events -->
+                                    <div class="col py-2">
+                                        <div class="card education-card transparent_card mirror-face shadow2">
+                                            <div class="card-body">
+                                                <div class="task">
+                                                    <div class="abstract">
+                                                        <h3 class="qualification__title"> Reeplayer (Culver City, CA) - Software Engineer Intern </h3>
+                                                        <p class="qualification__subtitle"> Computer Visions Team </p>
+                                                    </div>
+                                                    <div class="details">
+                                                        <p class="qualification__subtitle"> •	Launched 4 state-of-the-art video resolution services by providing NVIDIA Maxine API to provide AI visual effects. </p>
+                                                        <p class="qualification__subtitle"> •	Managed to reduce video camera noise by 80% and encoding artifacts by 70% to provide better end-user experiences. </p>
+                                                        <p class="qualification__subtitle"> Improved code coverage from 60% to 80% by modularizing Data Access Objects in Junit tests for camera utilities. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- End of the col py-2 -->
+
+
+                                    <!-- Timeline content Events -->
+                                  <div class="col py-2">
+                                    <div class="card education-card transparent_card mirror-face shadow2">
+                                        <div class="card-body">
+                                            <div class="task">
+                                                <div class="abstract">
+                                                    <h3 class="qualification__title"> Dickinson (Carlisle, PA) - Undergraduate Researcher </h3>
+                                                    <p class="qualification__subtitle"> First-Year Seminar (FYS) Assignment  </p>
+                                                </div>
+                                                <div class="details">
+                                                    <p class="qualification__subtitle"> •	Authored automated Python web program to assign 660+ Dickinson freshmen to 42+ First Year Seminar courses. </p>
+                                                    <p class="qualification__subtitle"> •	Achieved to balance gender and international student ratios by 85% in FYS classes maintaining 16 course capacities. </p>
+                                                    <p class="qualification__subtitle"> •	Collaborated with Professor Forrester in Dickinson to improve heuristics algorithm, improving runtime by 40%. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div> <!-- End of the col py-2 -->
+                                </div> <!-- End of the row-->
+
+                                
+
+
+                                <!-- Timeline DNB -->
+                                <div class="row">
+                                  <!-- Timeline design -->
+                                  <div class="col-auto text-center flex-column d-sm-flex">
+                                      <div class="row h-50 qualification__journey">
+                                          <div class="col">
+                                              <span class="qualification__line"></span>
+                                          </div>
+                                          <div class="col">&nbsp;</div>
+                                      </div>
+
+                                      <h5>
+                                          <span class="badge qualification__calendar">
+                                              <i class="uil uil-calendar-alt qualification__calendar-icon"></i>
+                                              2021
+                                          </span>
+                                      </h5>
+
+                                      <div class="row h-50 qualification__journey">
+                                          <div class="col">
+                                              <span class="qualification__line"></span>
+                                          </div>
+                                          <div class="col">&nbsp;</div>
+                                      </div>
+                                  </div>
+
+
+
+
+                                  <!-- Timeline content Events -->
+                                  <div class="col py-2">
+                                      <div class="card education-card transparent_card mirror-face shadow2">
+                                          <div class="card-body">
+                                              <div class="task">
+                                                  <div class="abstract">
+                                                      <h3 class="qualification__title"> DNB (Goyang-si, South Korea) - Full-Stack Software Engineer Intern </h3>
+                                                      <p class="qualification__subtitle"> Dev-Ops Team </p>
+                                                  </div>
+                                                  <div class="details">
+                                                      <p class="qualification__subtitle"> •	Accelerated customer retention and user clicks by 30% by designing and user-friendly DNB brochure site. </p>
+                                                      <p class="qualification__subtitle"> •	Revamped working process to save 8+ hours per week by modularizing program codes with MVC framework. </p>
+                                                      <p class="qualification__subtitle"> •	Developed and maintained 40+ backend end user services of websites managing 6+ database attribute types. </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div> <!-- end of the col py-2 -->
+
+                                </div> <!-- end of the row -->
+
+                                 
+
+                               
+                            </div> <!-- End of the container-py -->
+                        </div> <!-- End of the experience time line -->
+                    </div> <!-- End of the experience -->
+                </div>
+            </div>
+        </section>
+
+
+        
+
+    <!-- ------------- PORTFOLIO -------------------->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle"> Projects & Patent </span>
+
+            <div class="blog-slider">
+                <div class="blog-slider__wrp swiper-wrapper">
+
+
+                    <!-- For portfolio item 2 -->
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./assets/img/Dickinson.jfif" alt="Portfolio item">
+                        </div>
+
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code"> September 2022 (Ongoing)</span>
+                            <div class="blog-slider__title"> Assigning Dickinson Students to First Year Seminar (FYS) </div>
+                            <div class="blog-slider__text"> • Authored automated Python program with Gurobi solver to assign 660+ Dickinson freshmen to 42+ FYS courses.</div>
+                            <div class="blog-slider__text"> • Balanced gender and international student ratios by 85% in FYS classes maintaining 16+ course capacities.</div>
+                            <div class="blog-slider__text"> • Collaborated with Prof. Forrester in Dickinson to improve current assignment algorithm by applying Hungarian method, improving runtime by 28%.</div>
+                            <a href="https://github.com/JuheonChu/Dickinson-First-Year-Seminar-Assignment" target="_blank" class="button blog-slider__button button--flex"> 
+                                View Details
+                                <i class="uil uil-play button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- For portfolio item 2 -->
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./assets/img/pokemon.jpg" alt="Portfolio item">
+                        </div>
+
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code"> May 2022</span>
+                            <div class="blog-slider__title"> Pokemon DB </div>
+                            <div class="blog-slider__text"> •	Built user-friendly website to interact with 6 data sets and represent relational details of 230+ Pokemon features.</div>
+                            <div class="blog-slider__text"> •	Implemented MySQL and JDBC to construct 6 Data Access Objects and connect to 20+ backend services using JSP Servlet.</div>
+                            <a href="./assets/files/Pokemon Database.pptx" target="_blank" class="button blog-slider__button button--flex"> 
+                                View Details
+                                <i class="uil uil-play button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- For portfolio item 2 -->
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./assets/img/os.jpg" alt="Portfolio item">
+                        </div>
+
+                    <div class="blog-slider__content">
+                            <span class="blog-slider__code"> May 2022</span>
+                            <div class="blog-slider__title"> Butcher OS Kernel </div>
+                            <div class="blog-slider__text"> •	Demonstrated 16-bit operating system capable of concurrent execution of 8+ open source OS prompt commands. </div>
+                            <div class="blog-slider__text"> •	Employed Low C/C++ and Bash to construct file I/O system and establish pipeline to link 4+ software to disk image.</div>
+                            <a href="./assets/files/Technical Report.pdf" target="_blank" class="button blog-slider__button button--flex"> 
+                                View Details
+                                <i class="uil uil-play button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- For portfolio item 3 -->
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./assets/img/nike.png" alt="Portfolio item">
+                        </div>
+
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code"> July 2021</span>
+                            <div class="blog-slider__title"> The One Korea </div>
+                            <div class="blog-slider__text"> •	Created responsive franchise-launch website with JS and HTML/CSS to assign unique URL across 2 franchise brands. </div>
+                            <div class="blog-slider__text"> •	Implemented 16 UX/UI services for admin, franchisees, and customers by connecting Datasource beans to MySQL server. </div>
+                            <div class="blog-slider__text"> •	Collaborated with 2 students to operate 500+ JSP files with Spring MVC framework, improving UX by 45%. </div>
+                            <a href="https://github.com/JuheonChu/theOne" target="_blank" class="button blog-slider__button button--flex"> 
+                                View Details
+                                <i class="uil uil-play button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- For portfolio item 3 -->
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./assets/img/nike.png" alt="Portfolio item">
+                        </div>
+
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code"> June 2021</span>
+                            <div class="blog-slider__title"> NIKE JSP Project </div>
+                            <div class="blog-slider__text"> • Designed online shopping mall capable of 8+ UX services to serve as an example of NIKE with JSP and HTML/CSS. </div>
+                            <div class="blog-slider__text"> • Performed MySQL, JS, jQuery, AJAX and JSP Servlet to fetch 700+ product and service data from 40+ HTTP web server. </div>
+                            <a href="./assets/files/Nike JSP Project.pptx" target="_blank" class="button blog-slider__button button--flex"> 
+                                View Details
+                                <i class="uil uil-play button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- For portfolio item 1 -->
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./assets/img/katusa.jfif" alt="Patent ">
+                        </div>
+
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code"> July 2018 - April 2020</span>
+                            <div class="blog-slider__title"> Military Service (E-5 SGT) </div>
+                            <div class="blog-slider__text"> • Served as a member of the U.S Army 3 ABCT 2ID to strengthen the aliance between the U.S Army and Republic of Korea Army. </div>
+                            <div class="blog-slider__text"> • Engaged in 2+ Tank Gunnery live-round trainings and 7 Tank Tactics trainings as a tank crew. </div>
+                            <a href="" target="_blank" class="button blog-slider__button button--flex"> 
+                                SGT CHU
+                                <i class="uil uil-play button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <!-- For portfolio item 1 -->
+                    <div class="blog-slider__item swiper-slide">
+                        <div class="blog-slider__img">
+                            <img src="./assets/img/patent.png" alt="Patent ">
+                        </div>
+
+                        <div class="blog-slider__content">
+                            <span class="blog-slider__code"> February 2016</span>
+                            <div class="blog-slider__title"> Patent </div>
+                            <div class="blog-slider__text"> • Published a patent attaining fabric laminate for flooring to maintain uncontaminated during the fabrication process. </div>
+                            <a href="https://patents.google.com/patent/KR101626932B1/en" target="_blank" class="button blog-slider__button button--flex"> 
+                                View My Patent
+                                <i class="uil uil-play button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                    
+                    <div class="blog-slider__pagination"></div>
+                </div>
+            </div>
+
+        </section>
+
+    <!-- ------------- CONTACT US -------------------->
+        <section class="contact section" id="contact">
+            <h2 class="section__title"> Contact Me </h2>
+            <span class="section__subtitle"> Contact Information</span>
+
+            <div class="row mt-lg-6 justify-content-center contact_mail">
+                <!-- Contact information -->
+                <div class="col-lg-6 mx-lg-0 mx-2 contact__container container">
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+1 (717)-636-3611</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">E-mail</h3>
+                            <span class="contact__subtitle">juhuhni98@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-location-pin-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Address</h3>
+                            <span class="contact__subtitle"> 28 North College Street, Carlisle, Pennsylvania, USA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORM -->
+                <div class="col-lg-6 pl-lg-4 mt-lg-0 mt-6 contact-form" id="message-me">
+                    <h2 class="contact__title"> Interested to work together? - <span> Let's talk </span></h2>
+
+                    <form action="mailTo:juhuhni98@gmail.com" method="POST" class="cf">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" name="message-name" class="form-control form__color mb-30 cf" placeholder="Your Name">
+                            </div> 
+                            <div class="col-lg-6">
+                                <input type="email" name="message-email" class="form-control form__color mb-30 cf" placeholder="Your Email">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="message-subject" class="form-control form__color mb-30 cf" placeholder="Subject">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" class="form-control form__color mb-30 cf" cols="30" rows="5" placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="button button--flex send-message form_button">
+                                    Send Message
+                                    <i class="uil uil-message button__icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    <!-- -------------------------------FOOTER------------------------------------- -->
-    <footer class = "footer">
 
+<!-- ------------- FOOTER -------------------->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+
+                <div>
+                    <h1 class="footer__title"> John Chu </h1>
+                    <span class="footer__subtitle"> Software Engineer and Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link"> About Me</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio" class="footer__link"> My Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="footer__link"> Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/john-chu-72788b157/" target="_blank" class="footer__social" id="myLinkedIn">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/jc981073/" target="_blank" class="footer__social" id="myInstagram">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/JuheonChu" target="_blank" class="footer__social" id="myGithub">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+
+                    
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; John Chu</p>
+        </div>
     </footer>
+  
+
+<!-- ------------- SCROLL TOP -------------------->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
 
-
-
-
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!--
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 
     <!-- Core -->
     <script src="js/core/jquery.min.js"></script>
     <script src="js/core/popper.min.js"></script>
     <script src="js/core/bootstrap.min.js"></script>
 
-   
     <!-- Argon JS -->
-    <script src="js/argon-design-system.min.js"></script>
+    <script src="js/argon-design-system.js"></script>
 
-    <!-- Self Script-->
+    <!--  Typewriter CSS Effect -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Self Script -->
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -12,3 +12,19 @@ footer
 SKILLS 
 
 card ---> programming language & software SKILLS
+card -> Designs
+
+Timeline Designs
+
+Educations      EXPERIENCE
+
+line - data
+card - Title
+        Institute
+        Details - unfolded
+
+PORTFOLIO
+
+---------------=----
+
+<>

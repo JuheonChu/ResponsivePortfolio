@@ -1250,9 +1250,10 @@ img{
 }
 
 .footer__copy{
-  font-size: var(--smaller-font-size);
+  font-size: var(--big-font-size);
+  font: var(--roboto-font);
   text-align: center;
-  color: var(--text-color);
+  color: white;
   margin-top: var(--mb-3);
 }
 

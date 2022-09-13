@@ -112,7 +112,7 @@ body.dark-theme{
 
 /* ======= NAV BUTTONS DARK/LIGHT THEME ==================== */
 .nav__btns{
-    display: flex;
+    display: -webkit-box;
     align-items: center;
     padding-left: var(--mb-0-5);
     margin: 0;
@@ -250,7 +250,7 @@ img{
 .nav{
     max-width: 968px;
     height: var(--header-height);
-    display: flex;
+    display: -webkit-box;
     justify-content: space-between;
     align-items: center;
     margin-left: var(--mb-0-5);
@@ -401,6 +401,7 @@ img{
     align-content: center;
     text-align: center;
     transform: translateX(-4rem);
+    margin-left: -204px;
 }
 
 .home__welcome{
@@ -491,6 +492,7 @@ img{
 .home__scroll-mouse{
     font-size: var(--big-font-size);
     margin-top: var(--mb-3);
+    margin-right: 52px;
 }
 
 .home__scroll-name{
@@ -1532,7 +1534,7 @@ img{
       }
 
       #home{
-        height: 85vh;
+        height: 70vh;
       }
 
       .home__social{

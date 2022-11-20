@@ -117,7 +117,10 @@
                     <small class="home__welcome s-color"> Welcome to my Portfolio Website! </small>
                     <h1 class="home__title"> Hello I'm </h1>
                     <div id="typewriter"></div>
-                    <h3 class="home__subtitle" id="home-bio">Aspring software engineer interested in technology, web development, and CI/CD integration. Passionate about contributing to Humanitarian Open Source Projects for commonwealth. Team player respecting fellow seniors, juniors, and colleagues with dignity and respect. </h3>
+                    <h3 class="home__subtitle" id="home-bio">
+                         Aspring software engineer whose area of research interest orients to AI in Data Mining, Machine Learning, Comptuer Vision, Cloud Computing.
+                         Passionate about contributing to Open Source Projects and creating new systems of solving problems. 
+                         Collaborative, reliable, dedicated computer scientist. </h3>
                     <a></a>
                 </div>
 
@@ -478,10 +481,7 @@
                                                             <h3 class="qualification__title"> Dickinson College </h3>
                                                             <p class="qualification__subtitle"> Bachelor of Science in CS & Math</p>
                                                         </div>
-                                                        <div class="details">
-                                                            <p class="qualification__subtitle"> • Computer Science & Mathematics Double major </p>
-                                                            <p class="qualification__subtitle"> • Expected February 2024 </p>
-                                                        </div>
+                                                       
                                                     </div>
                                               </div>
                                         </div>
@@ -550,8 +550,8 @@
                                         <div class="card-body">
                                             <div class="task">
                                                 <div class="abstract">
-                                                    <h3 class="qualification__title"> Student-Faculty Collaborative Research </h3>
-                                                    <p class="qualification__subtitle"> Student Assignments for Dickinson Dickinson-First-Year-Seminar </p>
+                                                    <h3 class="qualification__title"> Research </h3>
+                                                    <p class="qualification__subtitle"> Student Assignments for Dickinson-First-Year-Seminar </p>
                                                 </div>
                                                 
                                             </div>
@@ -808,20 +808,28 @@
                 <div class="col-lg-6 pl-lg-4 mt-lg-0 mt-6 contact-form" id="message-me">
                     <h2 class="contact__title"> Interested to work together? - <span> Let's talk </span></h2>
 
-                    <div class="footer__socials">
-                        <a href="https://www.linkedin.com/in/john-chu-72788b157/" target="_blank" class="footer__social" id="myLinkedIn">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-    
-                        
-    
-                        <a href="https://github.com/JuheonChu" target="_blank" class="footer__social" id="myGithub">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-    
-                        
-                    </div>
-                    
+                    <form action="mailto:juhuhni98@gmail.com" method="POST" class="cf">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" name="message-name" class="form-control form__color mb-30 cf" placeholder="Your Name">
+                            </div> 
+                            <div class="col-lg-6">
+                                <input type="email" name="message-email" class="form-control form__color mb-30 cf" placeholder="Your Email">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="message-subject" class="form-control form__color mb-30 cf" placeholder="Subject">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" class="form-control form__color mb-30 cf" cols="30" rows="5" placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="button button--flex send-message form_button">
+                                    Send Message
+                                    <i class="uil uil-message button__icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
